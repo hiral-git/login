@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+//import logo from './logo.svg';
+//import './App.css';
+import './style.css';
+import  Registration from './examples/Registration';
+import Home from './examples/Home';
+import Login from './examples/Login';
+import Logout from './examples/Logout';
+//import Logout from './examples/Logout';
+import {BrowserRouter as Router,Route,Link,Switch } from 'react-router-dom';
+class App extends Component{
+  constructor(){
+    super();
+    this.state={ 
+      loggedIn:false
+    }
+   
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render(){
+    return(
+<Router>
+
+<div className="App">
+<ul className="nav-links">
+<li>
+<Link to="/">Registration</Link>
+</li>
+  <li>
+    <Link to="/home">Home</Link>
+  </li>
+ 
+  <li>
+    <Link to="/login">Login</Link>
+  </li>
+</ul>
+<hr />
+<Switch>
+
+<Route exact path="/" component={Registration} />
+<Route path="/home" component={Home} />
+<Route path="/login" component={Login} />
+<Route path="/logout" component={Logout} />
+</Switch>
+</div>
+</Router>
+ );
+  }
 }
+// function Home() {
+//   return (
 
+//     <div>
+   
+//       <h1 style={{fontFamily:"sans-serif"}}>Home</h1>
+    
+//     </div>
+//   );
+// }
 export default App;
