@@ -53,7 +53,7 @@ class Registration extends Component{
       }).then(function(response) {
         console.log(response);
         if(response.status===200){
-          return(<Redirect to={'/login'} />)
+          
           alert('registration successful')
           
        // return response.json();

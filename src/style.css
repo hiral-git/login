@@ -57,7 +57,7 @@ button{
 }
 .reg-box{
 width: 500px;
-font-family: 'Courier New', Courier, monospace;
+font-family: sans-serif;
 margin:auto;
 margin-top: 200px;
  background-color: #546e7a; 
