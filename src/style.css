@@ -1,3 +1,5 @@
+
+/* <link href="https://fonts.googleapis.com/css?family=Oswald|Saira+Stencil+One&display=swap" rel="stylesheet" /> */
 .login-box{
     width:500px;
 margin: auto;
@@ -5,11 +7,11 @@ margin-top:200px;
 color:#3e2723;
 box-sizing: border-box;
 border-radius: 25px;
-font-family: 'Courier New';
+font-family: ''Saira Stencil One', cursive';
 padding-top: 50px;
 padding-left:20px;
 padding-bottom: 30px;
-background-color: #546e7a;
+background-color: #8eacbb;
 /* background-image:linear-gradient(to right, #93d3cd , #19d8ed, #4ebce4); */
 }
 .App {
@@ -19,7 +21,7 @@ background-color: #546e7a;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: lightslategray
+    background: #0f5860;
   }
   .nav-links{
     width:40%;
@@ -33,33 +35,40 @@ background-color: #546e7a;
      height:700px;
      margin: 0;
      padding:0;
-     background-color:lightslategray;
+     font-weight: bold;
+     background-color:#0f5860;
     
 } 
 input[type=text], input[type=password]{
-width:100%;
-color:black;
-padding:12px 20px;
+width:95%;
+color:rgb(16, 4, 4);
+padding:11px 15px;
+padding-left: 8px;
+/* padding-block: 5px; */
 margin: 8px 0;
+font-family: 'Courier New', Courier, monospace;
 display:inline-block;
 box-sizing: border-box;
 border: 1px solid;
 }
 button{
     background-color: whitesmoke;
-    color: rgb(0, 0, 0);
+    color: rgb(1, 11, 4);
     padding:14px;
     margin:8px;
     border:none
 }
 .container{
-    padding:16px;
+    padding:20px;
 }
 .reg-box{
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 15px;
 width: 500px;
-font-family: sans-serif;
+font-family: 'Courier New', Courier, monospace;
 margin:auto;
 margin-top: 200px;
- background-color: #546e7a; 
+background-color: #7b47a9 ; 
 box-sizing: border-box;
 }
