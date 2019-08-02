@@ -1,10 +1,23 @@
 import React,{Component} from 'react';
 import {Redirect} from 'react-router-dom';
+// import AppBar from '@material-ui/core/AppBar';
+// import { makeStyles } from '@material-ui/core/styles';
+
 //import ReactDOM from 'react-dom';
 //import './style.css';
-//import App from './App';
-//import * as serviceWorker from './serviceWorker';
+
+// const useStyles=makeStyles(theme => ({
+
+// root:{
+
+// }
+
+
+// }));
+
 export default class Login extends Component{
+
+
   constructor(){
     super();
     const token=localStorage.getItem('token')
@@ -17,6 +30,8 @@ export default class Login extends Component{
        if(token==null){
          loggedIn=false
        }
+
+
     //let loggedIn=false
     this.state={
       email:'',
@@ -28,12 +43,19 @@ export default class Login extends Component{
     this.handlePassword=this.handlePassword.bind(this);
     this.handleLogin=this.handleLogin.bind(this);
   }
+
+
+
   handleEmail(event){ 
     this.setState({email:event.target.value})
   }
+
+
   handlePassword(event){
         this.setState({password:event.target.value})
   }
+
+
   async handleLogin(event)
   {
     event.preventDefault();
@@ -68,6 +90,8 @@ export default class Login extends Component{
       //console.log(response.text())
   }
 
+
+
     render(){
       console.log("mystate",this.state.loggedIn);
     if(this.state.loggedIn===true){
@@ -76,9 +100,12 @@ export default class Login extends Component{
       return(<Redirect to={'/home'} />)
       //const token1=localStorage.getItem("response.data")
     }
+
+    
     
     return (
     <div className="login-box">
+   
     <h2>Login Form</h2>
     <form onSubmit={this.handleLogin}>
     <div className="container">
@@ -92,6 +119,7 @@ export default class Login extends Component{
     <button type="submit" value="Login" >Login</button> 
     </div>
     </form>
+    
     </div>
     );
     }

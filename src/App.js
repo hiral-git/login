@@ -2,12 +2,17 @@ import React, {Component} from 'react';
 //import logo from './logo.svg';
 //import './App.css';
 import './style.css';
+//import AppBar from '@material-ui/core/AppBar';
 import  Registration from './examples/Registration';
 import Home from './examples/Home';
 import Login from './examples/Login';
 import Logout from './examples/Logout';
+import { makeStyles } from '@material-ui/core/styles';
 //import Logout from './examples/Logout';
 import {BrowserRouter as Router,Route,Link,Switch } from 'react-router-dom';
+
+
+
 class App extends Component{
   constructor(){
     super();
@@ -18,10 +23,12 @@ class App extends Component{
   }
 
   render(){
+   
     return(
 <Router>
 
 <div className="App">
+
 <ul className="nav-links">
 <li>
 <Link to="/">Registration</Link>
@@ -42,6 +49,7 @@ class App extends Component{
 <Route path="/login" component={Login} />
 <Route path="/logout" component={Logout} />
 </Switch>
+
 </div>
 </Router>
  );

@@ -1,31 +1,32 @@
-
+@import url('https://fonts.googleapis.com/css?family=Oswald|Saira+Stencil+One&display=swap');
 /* <link href="https://fonts.googleapis.com/css?family=Oswald|Saira+Stencil+One&display=swap" rel="stylesheet" /> */
 .login-box{
     width:500px;
 margin: auto;
 margin-top:200px;
-color:#3e2723;
+color:rgb(244, 234, 234);
 box-sizing: border-box;
 border-radius: 25px;
-font-family: ''Saira Stencil One', cursive';
+font-family: Saira Stencil One, cursive;
 padding-top: 50px;
 padding-left:20px;
 padding-bottom: 30px;
-background-color: #8eacbb;
+background-color: #2c2f33;
 /* background-image:linear-gradient(to right, #93d3cd , #19d8ed, #4ebce4); */
 }
 .App {
      /* text-align: center;  */
-  
+  color:rgb(244, 234, 234);
     /* display:flex; */
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: #0f5860;
+    background: whitesmoke;
   }
   .nav-links{
     width:40%;
     display:flex;
+    /* font-weight: bold; */
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -35,15 +36,17 @@ background-color: #8eacbb;
      height:700px;
      margin: 0;
      padding:0;
-     font-weight: bold;
-     background-color:#0f5860;
+     font-family: Saira Stencil One, cursive;
+     /* font-weight: bold; */
+     background-color:whitesmoke;
     
 } 
 input[type=text], input[type=password]{
 width:95%;
-color:rgb(16, 4, 4);
+color:rgb(0, 0, 0);
 padding:11px 15px;
 padding-left: 8px;
+border-radius: 15px;
 /* padding-block: 5px; */
 margin: 8px 0;
 font-family: 'Courier New', Courier, monospace;
@@ -53,22 +56,26 @@ border: 1px solid;
 }
 button{
     background-color: whitesmoke;
-    color: rgb(1, 11, 4);
+    color: rgb(244, 234, 234);
     padding:14px;
     margin:8px;
-    border:none
+    border:none;
+    font-family: Saira Stencil One, cursive;
 }
 .container{
     padding:20px;
 }
 .reg-box{
-    text-align: center;
-    padding-top: 5px;
-    padding-left: 15px;
+    /* text-align: center; */
+    padding-top: 50px;
+    padding-left: 30px;
 width: 500px;
-font-family: 'Courier New', Courier, monospace;
+/* font-family: 'Courier New', Courier, monospace; */
+font-family: Saira Stencil One, cursive;
+
 margin:auto;
 margin-top: 200px;
-background-color: #7b47a9 ; 
+border-radius: 10px;
+background-color: #2c2f33 ; 
 box-sizing: border-box;
 }

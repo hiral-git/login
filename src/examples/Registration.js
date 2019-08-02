@@ -60,6 +60,7 @@ class Registration extends Component{
         }
       }).catch((error) => alert("User Already exists"))
       // .then(function(body) {
+        
       //   console.log(body);
         
         
